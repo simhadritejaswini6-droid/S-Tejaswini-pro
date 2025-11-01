@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+int a,b,sum,avg;
+printf("Enter any two integers: ");
+scanf("%d%d", &a,&b);
+sum = a+b;
+avg = a%b;
+printf("Sum of the givrn two integers: %d\n", sum);
+printf("Average of the givrn two integers: %d", avg);
+return 0;
+}
