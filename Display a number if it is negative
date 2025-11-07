@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() 
+{
+ int n;
+  printf("Enter an integer:");
+  scanf("%d",&n);
+  if(n<0)
+{
+    printf("You entered %d.\n",n);
+    printf("The statement is negative.\n");
+}
+else
+{
+    printf("You entered %d.\n",n);
+    printf("The statemebnt is not negitive.\n");
+}
+return 0;
+printf("the statement is negative");
+return 0;
+}
