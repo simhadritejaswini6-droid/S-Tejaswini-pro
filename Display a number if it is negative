@@ -15,6 +15,4 @@ else
     printf("The statemebnt is not negitive.\n");
 }
 return 0;
-printf("the statement is negative");
-return 0;
 }
