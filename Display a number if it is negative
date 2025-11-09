@@ -12,7 +12,7 @@ int main()
 else
 {
     printf("You entered %d.\n",n);
-    printf("The statemebnt is not negitive.\n");
+    printf("The statement is not negative.\n");
 }
 return 0;
 }
