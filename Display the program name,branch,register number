@@ -3,11 +3,11 @@ int main()
 {
     int a,c;
     char b;
-    printf("Enter your name:.\n");
+    printf("Enter your name:\n");
     scanf("%d",&a);
-    printf("Enter your branch:.\n");
-    scanf("%d",&b);
-    printf("Enter your register number:.\n");
+    printf("Enter your branch:\n");
+    scanf("%c",&b);
+    printf("Enter your register number:\n");
     scanf("%d",&c);
     return 0;
 }
