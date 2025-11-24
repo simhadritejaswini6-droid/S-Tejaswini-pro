@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    int arr[100];
+    int n,value,i,position;
+    printf("Enter the number of elements:");
+    scanf("%d",&n);
+    if(n<1 || n>=100)
+    {
+        printf("Invalid number of elements.\n");
+        return 1;
+    }
+    printf("Enter %d sorted elements (e.g.,10 20 30 40 50:\n",n);
+        for(i=0;i<n;i++)
+        {
+            scanf("%d",&arr[i]);
+        }
+        printf("Enter the value to insert:");
+        scanf("%d",&value);
+        if(n>=100)
+        {
+
+            printf("Error Array is full.cannot insert the element.\n");
+            return 1;
+        }
+        for (i=n-1;i>=0;i--)
+        {
+            if(arr[i]>value)
+            {
+                arr[i+1]=arr[i];
+            }
+            else
+            {
+                break;
+            }
+        }
+        position=i+1;
+        arr[position]=value;
+        n++;
+        printf("\nArray after insertion:\n");
+        for(i=0;i<n;i++)
+        {
+            printf("%d",arr[i]);
+        }
+        printf("\n");
+        return 0;
+}
