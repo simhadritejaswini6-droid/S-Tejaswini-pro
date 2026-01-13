@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    int string_choice;
+    char s1[100], s2[100];
+    printf("Enter 1st String: ");
+    scanf("%s", s1);
+    printf("Enter 2nd String: ");
+    scanf("%s", s2);
+    printf("Enter your choice(1,2,3,4): ");
+    scanf("%d", &string_choice);
+    switch(string_choice){
+        case 1:
+           printf("Length od str1: %lu\n", strlen(s1));
+           break;
+        case 2:
+           strcat(s1, s2);
+           printf("After concatenation: %s\n", s1);
+           break;
+        case 3:
+           strcpy(s2, s1);
+           printf("Copied string: %s\n", s2);
+           break;
+        case 4:
+           printf("Concatenation result: %d\n", strcmp(s1,s2));
+           break;
+        default:
+           printf("Invalid String Choice!");
+           break;
+    }
+    return 0;
+}
