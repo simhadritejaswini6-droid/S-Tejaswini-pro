@@ -1,0 +1,27 @@
+#include <stdio.h>
+struct Department {
+    int dept_id;
+    char dept_name[30];
+};
+struct College {
+    int college_id;
+    char college_name[50];
+    struct Department dept;
+};
+int main() {
+    struct College c;
+    printf("Enter College ID: ");
+    scanf("%d", &c.college_id);
+    printf("Enter College Name: ");
+    scanf("%s", c.college_name);
+    printf("Enter Department ID: ");
+    scanf("%d", &c.dept.dept_id);
+    printf("Enter Department Name: ");
+    scanf("%s", c.dept.dept_name);
+    printf("\n--- College Details ---\n");
+    printf("College ID   : %d\n", c.college_id);
+    printf("College Name : %s\n", c.college_name);
+    printf("Dept ID      : %d\n", c.dept.dept_id);
+    printf("Dept Name    : %s\n", c.dept.dept_name);
+    return 0;
+}
