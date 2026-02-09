@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+    char path[1000];
+    char command[2000];
+    printf("Open File in Windows Notepad\n");
+    printf("Enter the file path (e.g., C:\\Users\\Name\\data.txt): ");
+    if (fgets(path, sizeof(path), stdin) != NULL) {
+        path[strcspn(path, "\n")] = 0;
+        snprintf(command, sizeof(command), "notepad \"%s\"", path);
+        printf("Opening with Notepad--\n");
+        system(command);
+    }
+    return 0;
+}
