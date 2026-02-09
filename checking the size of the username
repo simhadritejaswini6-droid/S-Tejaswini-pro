@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char user1[] = "Tejaswini";
+    char pass1[] = "12345";
+    char user2[] = "Tejaswini";
+    char pass2[] = "12345";
+    if (strcmp(user1, user2) == 0 && strcmp(pass1, pass2) == 0) {
+        printf("Login Successful\n");
+        printf("Username: %s\n", user1);
+        printf("Password: %s\n", pass1);
+    } else {
+        printf("Invalid Username or Password");
+    }
+    return 0;
+}
